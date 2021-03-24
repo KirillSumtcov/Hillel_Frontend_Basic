@@ -25,8 +25,9 @@ header nav a {
     font-weight: bold;
 }
 
-header nav a.active {
+header nav a:hover {
     background-color: #ff3f40;
+    transition-duration: 0.4s;
 }
 
 .present {
@@ -68,6 +69,11 @@ header nav a.active {
     box-shadow: 0 0 10px 0 black;
 }
 
+.present .video .video-content:hover {
+    box-shadow: 10px -10px 5px #2d2d2d;
+    transition-duration: 0.4s;
+}
+
 section .container .services {
     display: flex;
     background-color: #ffffff;
@@ -106,6 +112,12 @@ section .container .services {
 .optionPosition {
     width: 300px;
     margin-bottom: 50px;
+}
+
+.optionPosition:hover {
+    transform: scale(1.2);
+    transition: 0.4s linear;
+    box-shadow: 0 0 8px #2d2d2d;
 }
 
 .optionPosition h3 {
@@ -165,6 +177,10 @@ section .container .product .active {
     padding: 20px 0;
 }
 
+section .container .product .active div {
+    display: inline-block;
+}
+
 section .container .product .active a {
     color: #4c4c4c;
     padding: 15px 45px 15px 45px;
@@ -173,6 +189,16 @@ section .container .product .active a {
     font-size: 25px;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+section .container .product .active div:hover {
+    transform: scale(1.2);
+    transition: 0.4s linear;
+    text-shadow: 2px 0 5px #2d2d2d;
+}
+
+section .container .product .active a:hover {
+    color: #ff3f40;
 }
 
 section .container .product .figure {
@@ -187,6 +213,12 @@ section .container .product .figure div {
     height: 290px;
     background-color: #f5f0dd;
     margin: 10px;
+}
+
+section .container .product .figure div:hover {
+    box-shadow: 0 0 5px #2d2d2d;
+    transform: scale(1.3);
+    transition: 0.4s linear;
 }
 
 section .container .meet {
@@ -232,6 +264,12 @@ section .container .meet .information .photo {
     background-color: #f5f0dd;
 }
 
+section .container .meet .information .photo:hover {
+    transform: scale(1.2);
+    transition: 0.4s linear;
+    box-shadow: 0 0 10px #2d2d2d;
+}
+
 section .container .meet .information .name_surname {
     display: flex;
     flex-direction: column;
@@ -268,6 +306,12 @@ section .container .meet .information .name_surname .link_social a {
     padding: 5px 20px 5px 20px;
     text-decoration: none;
     color: #333333;
+    font-style: italic;
+}
+
+section .container .meet .information .name_surname .link_social a:hover {
+    text-shadow: 0 0 10px #2d2d2d;
+    transition: 0.4s linear;
 }
 
 section .container .meet .information .person .person_photo {
@@ -283,6 +327,12 @@ section .container .meet .information .person .person_photo div {
     height: 215px;
     margin: 10px;
     background-color: #f5f0dd;
+}
+
+section .container .meet .information .person .person_photo div:hover {
+    box-shadow: 0 0 10px #2d2d2d;
+    transition: 0.4s linear;
+    transform: scale(1.3);
 }
 
 main {
@@ -324,6 +374,11 @@ main .container .address .email_button .email {
     color: #d7d7d7;
     border-color: #d7d7d7;
     border-radius: 6px;
+}
+
+main .container .address .email_button .email:hover {
+    box-shadow: 0 0 10px #707070;
+    transition: 0.4s linear;
 }
 
 section .container .touch {
@@ -386,6 +441,11 @@ section .container .touch .message .your_type .main_mail .info {
     text-indent: 30px;
 }
 
+section .container .touch .message .your_type .main_mail .info:hover {
+    box-shadow: 0 0 10px #444444;
+    transition: 0.4s linear;
+}
+
 section .container .touch .message .your_type .main_mail .mail {
     line-height: 55px;
     width: 351px;
@@ -397,6 +457,11 @@ section .container .touch .message .your_type .main_mail .mail {
     text-align: left;
     background: #e5e5e5;
     text-indent: 30px;
+}
+
+.mail:hover {
+    box-shadow: 0 0 10px #444444;
+    transition: 0.4s linear;
 }
 
 section .container .touch .message .your_type .type_your_message {
@@ -416,6 +481,11 @@ section .container .touch .message .your_type .type_your_message {
     font-size: 18px;
     text-align: left;
     background: #e5e5e5;
+}
+
+section .container .touch .message .your_type .type_your_message:hover {
+    box-shadow: 0 0 10px #444444;
+    transition: 0.4s linear;
 }
 
 section .container .touch .message .your_type .button-extra {
@@ -466,6 +536,14 @@ footer .container .end .copyright p {
 
 footer .container .end .links {
     margin: 30px 0 30px 325px;
+    display: flex;
+}
+
+footer .container .end .links div:hover {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: 0.4s linear;
+    transform: rotateZ(720deg);
 }
 
 footer .container .end .links img {
@@ -497,6 +575,7 @@ footer .container .end .links img {
 .button:hover {
     background-color: #ff3f40;
     color: white;
+    transition: 0.4s linear;
 }
 
 .button-extra {
@@ -515,13 +594,10 @@ footer .container .end .links img {
 .button-extra:hover {
     background-color: #fff;
     color: #ff3f40;
+    transition: 0.4s linear;
 }
 
 .last-line {
     display: inline-block;
     width: 100%;
-}
-
-#color_red {
-    color: #ff3b3b;
 }
