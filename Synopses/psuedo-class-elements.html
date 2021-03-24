@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Псевдоклассы и псевдоэлементы</title>
+    <link rel="stylesheet" href="../css.css/general.css">
+    <link rel="stylesheet" href="./styles/psuedo-class-elements.css">
+</head>
+
+<body>
+    <div class="block">
+        <header>
+            <div class="header-top">
+                <div class="logo"></div>
+                <span class="link">
+                        <a href="../index.html">Главная</a>
+                        <a href="../goals.html">Мои цели</a>
+                        <a href="../lesson.html">Home works</a>
+                        <a href="../loyuot.html">Loyuot</a>
+                        <a href="../Complex backgraund/complex_background.html">Complex Background</a>
+
+                    </span>
+            </div>
+            <nav class="topbar">
+                <h1>Псевдоклассы и Псевдоэлементы</h1>
+            </nav>
+
+        </header>
+        <section>
+            <div class="leftbar">
+                <ul class="lesson-menu">
+                    <li><a href="../index.html" target=_self>Lesson 1</a></li>
+                    <li><a href="../table.html" target=_self>Lesson 2</a></li>
+                    <li><a href="../css.html" target=_self>Lesson 3</a></li>
+                    <li><a href="../block.html" target=_self>Lesson 4</a></li>
+                    <li><a href="../Synopses/loyuots.html" target=_self>Lesson 5</a></li>
+                    <li> <a href="../Synopses/gradient.html" target=_self>Lesson 6</a></li>
+                    <li> <a href="../Synopses/form.html" target=_self>Lesson 7</a></li>
+                    <li> <a href="../Synopses/positioning.html" target=_self>Lesson 8</a></li>
+                    <li> <a href="../Synopses/psuedo-class-elements.html" target=_self>Lesson 9</a></li>
+                    <li> <a href="../Synopses/git.html" target=_self>Lesson 10</a></li>
+                    <li> <a href="../Synopses/git.html" target=_self>Lesson 11</a></li>
+                    <li> <a href="../Synopses/animation.html" target=_self>Lesson 12</a></li>
+                </ul>
+            </div>
+            <div class="description">
+                <div class="material_lesson">
+                    <p>
+                        Псевдоклассы - это ключевое слово, добавленное к селектору, которое определяет его особое состояние.<br> :active - соответствует элементу в момент, когда он активируется пользователем.<br> :checked - находит любые элементы radio,
+                        checkbox, option, которые выбраны или включены. Пользователь может изменить это состояние, нажав на элемент, или выбрав другое значение, в этом случае :checked повторно не применится к элементу, а сохранится. <br> :default - находит
+                        элемент формы, установленный по умолчанию для группы связаных элементов.
+                        <br> :disabled - находит любой отключенный элемент.
+                        <br> :empty - находит любой элемент, у которого нет потомков. <br> :enabled - находит любой включенный элемент. <br> :first - используется с @-правилом @page, представляя первую страницу документа при печати. <br> :first-child
+                        - находит любой элемент, являющийся первым в своём родителе. <br> :first-of-type - находит первого потомка своего типа среди детей родителя. <br> :fullscreen - соответствует элементу, который в данный момент находится в полноэкранном
+                        режиме. <br> :focus - применяетс я, когда элемент (такой как input формы) получает фокус. <br> :hover - срабатывает, когда пользователь наводит на элемент мышью, но не обязательно активирует его. <br> :indeterminate - находит элементы
+                        в неопределённом состоянии. <br> :in-range - находит элементы, значение которых соответствует указанному для них диапазону ограничений.
+                        <br> :invalid - находит любые &lt;input&gt; или &lt;form&gt; элементы, контент которых не проходит валидацию, в соответствии с типом поля. Он позволяет вам легко менять внешний вид полей, что позволяет пользователю видеть и исправлять
+                        ошибки. <br> :lang() - выбирает элементы основываясь на языке, на котором они определены. <br> :last-child - находит любой элемент, являющийся последним в его родителе. <br> :last-of-type - находит последнего потомка с заданным
+                        тегом в списке детей родительского элемента. <br> :left - используется с at-правилом @page, предоставляет все левые страницы печатного документа. <br> :link - позволяет вам выбирать ссылки внутри элементов. Он выберет любую ссылку,
+                        которая ещё не была посещена, даже те, которые уже стилизованы, используя селекторы с другими, относящимися к ссылкам, псевдо-классам типа :hover, :active или :visited. <br> :not(X) - функция, принимающая простой селектор X в качестве
+                        аргумента. Он находит элементы, не соответствующие селектору. X не должен содержать других отрицательных селекторов. <br> :visited - позволяет вам выбирать ссылки, которые были посещены. <br>
+                    </p>
+                    <p>
+                        Псевдоэлемент — это ключевое слово, добавляемое к селектору, которое позволяет стилизовать определённую часть выбранного элемента. <br> ::after - создаёт псевдоэлемент, который является последним потомком выбранного элемента. Часто
+                        используется для добавления косметического содержимого в элемент с помощью свойства content. По умолчанию является инлайновым. <br> ::before - создаёт псевдоэлемент,который является первым потомком выбранного элемента. Часто используется
+                        для добавления косметического содержимого в элемент с помощью свойства content. По умолчания является инлайновым <br> ::first-letter - применяет стили к первой букве первой строки блочного элемента, но только если нету другого
+                        предшествующего содержимого (такого как изображения или инлайн таблицы). <br> ::first-line - применяет стили к первой строке блочного элемента. Обратите внимание, что длина первой строки зависит от многих факторов, включая ширину
+                        элемента, ширину документа и размер шрифта текста. <br> ::slotted() - представляет собой любой элемент, помещенный в слот внутри HTML-шаблона (дополнительная информация в Using templates and slots). <br> ::backdrop - это прямоугольник
+                        с размерами окна, который отрисовывается сразу же после отрисовки любого элемента в полноэкранном режиме. <br> ::placeholder - представляет собой текст placeholder в &lt;input&gt; или &lt;textarea&gt; элементах. <br> ::marker -
+                        применяет стили к маркеру элемента списка, которые обычно содержит значок или номер. <br>
+
+                    </p>
+                    <p>
+
+                    </p>
+                    <p>
+
+                    </p>
+                    <p>
+
+                    </p>
+                    <p>
+
+                    </p>
+
+                </div>
+                <div class="exemple">
+                    <p><a href="../index.html">...вернуться назад</a></p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="certificate">Сертификаты :
+                <a href="https://certificate.ithillel.ua/view/11807060/ru">Introduction Java</a>
+            </div>
+            <div class="network">Соц.сети:
+                <a href="https://www.linkedin.com/in/%D0%BA%D0%B8%D1%80%D0%B8%D0%BB%D0%BB-%D1%81%D1%83%D0%BC%D1%86%D0%BE%D0%B2-9b80921b0/">Linkedin, </a>
+                <a href="https://www.instagram.com/sumtsov_kirill/?hl=ru">Instagram, </a>
+                <a href="https://www.facebook.com/profile.php?id=100017460542441">Facebook</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

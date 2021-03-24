@@ -1,0 +1,14 @@
+.first_lesson_material {
+    border: 5px solid #6b7e94;
+    border-radius: 5px;
+}
+
+.first_lesson_material ul {
+    padding: 50px;
+}
+
+.first_lesson_material ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #111418;
+}

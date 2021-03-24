@@ -1,0 +1,15 @@
+main .table {
+    padding: 30px 60px;
+    width: 100%;
+    font-size: 19px;
+    text-align: justify;
+}
+
+.table th {
+    padding: 5px;
+    font-size: 25px;
+}
+
+.table td {
+    padding: 5px;
+}

@@ -1,0 +1,53 @@
+section .leftbar {
+    background-color: rgb(217, 219, 226);
+    font-size: 19px;
+    padding: 20px;
+}
+
+section .leftbar ul {
+    width: 150px;
+}
+
+section {
+    display: flex;
+}
+
+.material_lesson {
+    font-size: 18px;
+    width: 90%;
+    padding: 20px;
+}
+
+.description .material_lesson p {
+    margin: 20px;
+    text-indent: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description .material_lesson ul {
+    margin: 20px;
+}
+
+.description .material_lesson ol {
+    margin: 20px 0 20px 30px;
+}
+
+.description .material_lesson ul {
+    margin-left: 20px;
+}
+
+.exemple {
+    padding: 30px;
+}
+
+.exemple p a {
+    padding-left: 800px;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.exemple dt {
+    padding: 10px;
+}

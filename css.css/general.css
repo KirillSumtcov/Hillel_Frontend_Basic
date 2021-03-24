@@ -1,0 +1,117 @@
+* {
+    font-family: Helvetica, Arial, Verdana, Sans;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.block {
+    background-color: rgb(127, 155, 233);
+    width: 1300px;
+    margin: 20px auto;
+}
+
+header .logo {
+    width: 200px;
+    height: 150px;
+    background-image: url(../image/portfolio.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+header .link {
+    padding-left: 300px;
+}
+
+header .link a {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 21px;
+    color: white;
+}
+
+.topbar {
+    background-color: rgb(217, 219, 226);
+    text-align: center;
+    font-size: 35px;
+    padding: 10px;
+}
+
+main>table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+main .leftbar {
+    width: 200px;
+    background-color: rgb(217, 219, 226);
+    font-size: 19px;
+}
+
+main .myPhoto,
+main .leftbar,
+main .info {
+    padding: 20px;
+}
+
+.lesson-menu {
+    padding-left: 40px;
+    color: rgba(20, 13, 13, 0.726);
+}
+
+.lesson-menu li {
+    padding-bottom: 10px;
+}
+
+.lesson-menu a {
+    color: rgba(20, 13, 13, 0.726);
+    text-decoration: none;
+}
+
+main .leftbar {
+    width: 15%;
+}
+
+.footer {
+    line-height: 50px;
+    background-color: rgb(127, 155, 233);
+    text-align: center;
+    color: rgba(20, 13, 13, 0.726);
+    font-size: 0;
+}
+
+footer .certificate,
+footer .network {
+    border-collapse: collapse;
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+
+footer .certificate {
+    font-size: 13px;
+    color: white;
+}
+
+.certificate a {
+    color: white;
+}
+
+footer .network {
+    font-size: 13px;
+    color: white;
+}
+
+footer .network a {
+    color: white;
+}

@@ -1,0 +1,16 @@
+main .Photo a img {
+    margin: 20px auto;
+    width: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px dashed white;
+}
+
+.Photo td {
+    color: white;
+    padding: 10px 100px;
+}
+
+.Photo {
+    text-align: center;
+}

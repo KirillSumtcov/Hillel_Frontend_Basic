@@ -1,0 +1,44 @@
+section .leftbar {
+    background-color: rgb(217, 219, 226);
+    font-size: 19px;
+    padding: 20px;
+}
+
+section .leftbar ul {
+    width: 150px;
+}
+
+section {
+    display: flex;
+}
+
+.material_lesson {
+    font-size: 18px;
+    width: 90%;
+    padding: 20px;
+}
+
+.description .material_lesson p {
+    margin: 10px;
+    text-indent: 20px;
+}
+
+.exemple {
+    padding: 30px;
+}
+
+.exemple p a {
+    padding-left: 800px;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.exemple dt {
+    padding: 10px;
+}
+
+.material_lesson p::first-letter {
+    color: red;
+    font-size: 20px;
+}

@@ -1,0 +1,87 @@
+section .leftbar {
+    background-color: rgb(217, 219, 226);
+    font-size: 19px;
+    padding: 20px;
+}
+
+section .leftbar ul {
+    width: 150px;
+}
+
+section {
+    display: flex;
+}
+
+.description {
+    display: flex;
+}
+
+.material_lesson {
+    font-size: 18px;
+    width: 60%;
+    padding: 20px;
+}
+
+.description .material_lesson p {
+    margin: 10px;
+    text-indent: 20px;
+}
+
+.exemple {
+    width: 50%;
+    padding: 30px;
+}
+
+.exemple dt {
+    padding: 10px;
+}
+
+input[type="text"] {
+    height: 40px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 1px black;
+    border: none;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+input[type='radio']+label>span {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    background-image: radial-gradient(closest-side circle at center, #777 70%, transparent 85%);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+input[type='radio']:checked+label>span {
+    background-color: green;
+    background-position: right;
+    background-image: radial-gradient(closest-side circle at center, #4f4 70%, transparent 85%);
+}
+
+input[type='file'] {
+    display: none;
+}
+
+input[type='file']+label {
+    background-image: linear-gradient(to bottom, #aaa, #999);
+    padding: 10px;
+    border: 1px solid #555;
+    color: white;
+}
+
+p a {
+    padding-left: 200px;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}

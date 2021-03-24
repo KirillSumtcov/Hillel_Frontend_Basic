@@ -1,0 +1,83 @@
+    body {
+        background-color: #8e8e8e;
+        width: 100%;
+    }
+    
+    .hello {
+        width: 1280px;
+        height: 700px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        background-image: linear-gradient( #fff, #fff);
+    }
+    
+    .hello h1 {
+        padding: 55px 0 80px 55px;
+        color: #000000;
+        font-size: 35px;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .hello .information {
+        height: 200px;
+    }
+    
+    .information .trianle_orange {
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: 850px;
+        background-position: bottom right;
+        background-image: linear-gradient(to right bottom, #ffffff 50%, #ff9b01 50%);
+        /* linear-gradient(to right bottom, transparent 50%, #8e8e8e 50%); */
+    }
+    
+    .trianle_grey {
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: 600px;
+        background-position: bottom right;
+        background-image: linear-gradient(to right bottom, transparent 50%, #8e8e8e 50%);
+    }
+    
+    .trianle_2_grey {
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: top right;
+        background-image: linear-gradient(to right top, #8e8e8e 50%, transparent 50%);
+    }
+    
+    .information .trianle_2_grey p {
+        width: 650px;
+        padding: 120px 70px 20px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: #fff;
+        text-align: left;
+    }
+    
+    .hello .complete {
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: top left;
+        background-image: linear-gradient(to right bottom, #8e8e8e 50%, transparent 50%);
+    }
+    
+    .complete .compete_white {
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: top right;
+        background-image: linear-gradient(to left bottom, transparent 50%, #ffffff 50%);
+    }
+    
+    .complete .compete_white div {
+        height: 100px;
+        text-align: left;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        padding: 200px 0 0 50px;
+    }

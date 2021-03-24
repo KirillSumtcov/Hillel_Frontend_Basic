@@ -1,0 +1,17 @@
+main .background {
+    padding: 30px 60px;
+    background-image: url("../image/html+css.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.background th {
+    padding: 5px 15px;
+    font-size: 25px;
+}
+
+.background td {
+    padding: 5px 30px;
+    font-size: 19px;
+}
