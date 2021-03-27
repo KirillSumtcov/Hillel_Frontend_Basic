@@ -1,82 +1,802 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Helvetica, sans-serif, Arial;
 }
 
 .container {
-    width: 1280px;
     margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header .container {
+    max-width: 1280px;
     font-size: 0;
-}
-
-nav {
     position: relative;
-    width: 100%;
-    height: 90px;
-    padding-top: 30px;
+    height: 120px;
 }
 
-nav .logo {
+header .container .logo {
+    max-width: 50%;
+    height: 90px;
     position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    width: calc(50% - 10px);
-    height: 90px;
-    padding-top: 30px;
+    top: 30px;
+    left: 3%;
 }
 
-nav .logo a {
+header .container .logo a {
+    max-width: 50%;
     text-decoration: none;
-    color: #000;
 }
 
-nav .logo .bg_logo {
+header .container .logo .bg_logo {
+    position: absolute;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: #5094f2;
-    line-height: 70px;
+    line-height: 100px;
     text-align: center;
     color: #fff;
-    font-size: 50px;
+    font-size: 100px;
     display: inline-block;
-    margin-left: 25px;
+    left: 125px;
+    top: 10px;
 }
 
-nav .logo .bg_name {
-    display: inline-block;
-    width: 300px;
-    height: 50px;
-}
-
-nav .logo .bg_name p {
-    margin-left: 20px;
-    font-size: 70px;
-}
-
-.link {
+header .container .logo a p {
     position: absolute;
-    top: 0;
-    right: 0;
-    display: inline-block;
-    width: calc(50% - 10px);
-    padding-top: 50px;
+    left: 195px;
+    font-size: 70px;
+    color: #000;
 }
 
-.link .link_text {
+header .container .link {
+    max-width: 50%;
+    position: absolute;
+    top: 50px;
+    right: 6%;
     font-size: 21px;
     text-align: right;
-    margin-right: 25px;
     line-height: 70px;
 }
 
-.link .link_text a {
+header .container .link a {
     text-decoration: none;
     color: #6c6c6c;
     margin-right: 40px;
 }
 
-.link .link_text a:hover {
-    box-shadow: 0 12px 1px #5094f2;
+header .container .link a:hover {
+    box-shadow: 0 40px 0 #5094f2;
+    transition: 0.4s linear;
+}
+
+@media screen and (max-width:640px) {
+    header .container {
+        max-width: 1280px;
+        font-size: 0;
+        position: relative;
+        height: 90px;
+    }
+    header .container .logo a {
+        max-width: 50%;
+        text-decoration: none;
+    }
+    header .container .logo .bg_logo {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #5094f2;
+        line-height: 80px;
+        text-align: center;
+        color: #fff;
+        font-size: 70px;
+        display: inline-block;
+        left: 31px;
+        top: 0;
+    }
+    header .container .logo a p {
+        position: absolute;
+        left: 100px;
+        top: 0;
+        font-size: 50px;
+        color: #000;
+    }
+    header .container .link {
+        position: relative;
+        left: 85%;
+        top: 35%;
+        width: 60px;
+        height: 44px;
+        border: 1px solid #5094f2;
+        background-color: #5094f2;
+        border-radius: 10%;
+    }
+    header .container .link:hover {
+        cursor: pointer;
+    }
+    header .container .link::before,
+    .link::after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 6px;
+        background-color: #fff;
+        margin: 6px 10px;
+        border-radius: 2px;
+    }
+    header .container .link::before {
+        margin-bottom: 19px;
+        box-shadow: 0 12px 0 #fff;
+    }
+    header .container .link a {
+        display: none;
+        text-decoration: none;
+        color: #6c6c6c;
+        margin-right: 40px;
+    }
+    header .container .link a:hover {
+        display: none;
+        box-shadow: 0 33px 1px #5094f2;
+        transition: 0.4s linear;
+    }
+}
+
+section {
+    position: relative;
+    background-image: url('../Image/dsfsdfsdfds.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+@keyframes container {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+section .container {
+    max-width: 1280px;
+    position: relative;
+    display: flex;
+    animation-name: container;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+
+section .container .layer {
+    position: absolute;
+    top: 49%;
+    left: 3%;
+}
+
+section .container .layer:hover {
+    transform: scale(0.8);
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+section .container .iphone {
+    box-sizing: border-box;
+    width: 50%;
+    height: 480px;
+}
+
+section .container .iphone img {
+    position: absolute;
+    left: 14%;
+    top: 40px;
+}
+
+section .container .text_name_button {
+    box-sizing: border-box;
+    position: relative;
+    width: 50%;
+}
+
+.text_name_button h2 {
+    position: absolute;
+    top: 30%;
+    font-size: 42px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.text_name_button p {
+    position: absolute;
+    top: 45%;
+    line-height: 50px;
+    font-size: 27px;
+    font-weight: normal;
+    color: #fff;
+}
+
+section .container .text_name_button .button {
+    position: absolute;
+    top: 70%;
+    margin-left: 15px;
+    width: 180px;
+    line-height: 40px;
+    padding-left: 25px;
+    border: 1px solid #5094f2;
+    background-color: #5094f2;
+    color: #fff;
+    font-size: 22px;
+    background-repeat: no-repeat;
+    background-position: 10px 8px;
+}
+
+section .container .text_name_button .button:hover {
+    box-shadow: 0px 0px 10px #fff;
+    transition: 0.4s linear;
+    cursor: pointer;
+}
+
+section .container .text_name_button img {
+    position: absolute;
+    left: 90%;
+    bottom: 38%;
+}
+
+section .container .text_name_button img:hover {
+    transform: scale(0.8);
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+@media screen and (max-width:640px) {
+    section {
+        position: relative;
+        height: 250px;
+        background-image: url('../Image/dsfsdfsdfds.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+    @keyframes container {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    section .container {
+        max-width: 1280px;
+        position: relative;
+        height: 250px;
+        display: flex;
+        animation-name: container;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+    }
+    section .container .layer {
+        display: none;
+        position: absolute;
+        top: 49%;
+        left: 3%;
+    }
+    section .container .layer:hover {
+        transform: scale(0.8);
+        transition: 0.2s linear;
+        cursor: pointer;
+    }
+    section .container .iphone {
+        box-sizing: border-box;
+        width: 50%;
+        height: 250px;
+    }
+    section .container .iphone img {
+        position: absolute;
+        left: 5%;
+        height: 225px;
+        width: 180px;
+        top: 20px;
+    }
+    section .container .text_name_button {
+        box-sizing: border-box;
+        position: relative;
+        width: 50%;
+    }
+    .text_name_button h2 {
+        position: absolute;
+        top: 14%;
+        font-size: 26px;
+        font-weight: normal;
+        color: #fff;
+    }
+    .text_name_button p {
+        position: absolute;
+        top: 30%;
+        line-height: 40px;
+        font-size: 19px;
+        font-weight: normal;
+        color: #fff;
+    }
+    section .container .text_name_button .button {
+        position: absolute;
+        top: 70%;
+        margin-left: 0;
+        width: 235px;
+        line-height: 40px;
+        padding-left: 25px;
+        border: 1px solid #5094f2;
+        background-color: #5094f2;
+        color: #fff;
+        font-size: 27px;
+        background-repeat: no-repeat;
+        background-position: 10px 8px;
+    }
+    section .container .text_name_button .button:hover {
+        box-shadow: 0px 0px 10px #fff;
+        transition: 0.4s linear;
+        cursor: pointer;
+    }
+    section .container .text_name_button img {
+        display: none;
+        position: absolute;
+        left: 90%;
+        bottom: 38%;
+    }
+    section .container .text_name_button img:hover {
+        transform: scale(0.8);
+        transition: 0.2s linear;
+        cursor: pointer;
+    }
+}
+
+main {
+    position: relative;
+    top: -10px;
+    background-image: url("../Image/Layer\ 61.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .container {
+    max-width: 1280px;
+    position: relative;
+    top: 10px;
+    display: flex;
+}
+
+main .container .pencil {
+    position: relative;
+    box-sizing: border-box;
+    width: 33%;
+    height: 360px;
+}
+
+main .container .pencil .circle1_img_png {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    background-image: url('../Image/Shape\ 1\ copy.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 50%;
+    top: 65px;
+}
+
+main .container .pencil .circle1_img_png img {
+    position: absolute;
+    left: 55px;
+    top: 45px;
+}
+
+main .container .pencil .text_links1 {
+    position: absolute;
+    width: 69%;
+    font-size: 20px;
+    text-align: center;
+    left: 35%;
+    top: 80%;
+}
+
+main .container .pencil .text_links1 a {
+    text-decoration: none;
+    color: #5094f2;
+    font-size: 20px;
+}
+
+main .container .pencil .text_links1 p {
+    font-size: 16px;
+    padding-top: 10px;
+    color: #909090;
+}
+
+main .container .pc {
+    position: relative;
+    box-sizing: border-box;
+    width: 33%;
+    height: 360px;
+}
+
+main .container .pc .circle2_img_png {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    background-image: url('../Image/Shape\ 1\ copy\ 2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 33%;
+    top: 65px;
+}
+
+main .container .pc .circle2_img_png img {
+    position: absolute;
+    left: 48px;
+    top: 55px;
+}
+
+main .container .pc .text_links2 {
+    position: absolute;
+    max-width: 69%;
+    font-size: 20px;
+    text-align: center;
+    left: 22%;
+    top: 80%;
+}
+
+main .container .pc .text_links2 a {
+    text-decoration: none;
+    color: #5094f2;
+    font-size: 20px;
+}
+
+main .container .pc .text_links2 p {
+    font-size: 16px;
+    padding-top: 10px;
+    color: #909090;
+}
+
+main .container .bag {
+    box-sizing: border-box;
+    position: relative;
+    width: 33%;
+    height: 360px;
+}
+
+main .container .bag .circle3_img_png {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    background-image: url('../Image/Shape\ 1\ copy\ 3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 15%;
+    top: 65px;
+}
+
+main .container .bag .circle3_img_png img {
+    position: absolute;
+    left: 48px;
+    top: 50px;
+}
+
+main .container .bag .text_links3 {
+    position: absolute;
+    max-width: 69%;
+    font-size: 20px;
+    text-align: center;
+    left: 4%;
+    top: 80%;
+}
+
+main .container .bag .text_links3 a {
+    text-decoration: none;
+    color: #5094f2;
+    font-size: 20px;
+}
+
+main .container .bag .text_links3 p {
+    font-size: 16px;
+    padding-top: 10px;
+    color: #909090;
+}
+
+@media screen and (max-width:640px) {
+    main {
+        position: relative;
+        top: -10px;
+        background-image: url("../Image/Layer\ 61.png");
+        background-repeat: no-repeat;
+        background-size: 0;
+        height: 100%;
+    }
+    main .container {
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        top: 10px;
+        display: block;
+    }
+    main .container .pencil {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: 33%;
+        display: inline-block;
+        border-bottom: 1px solid #ccc;
+    }
+    main .container .pencil .circle1_img_png {
+        box-sizing: border-box;
+        position: absolute;
+        width: 135px;
+        height: 135px;
+        background-image: url('../Image/Shape\ 1\ copy.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 8%;
+        top: 20%;
+    }
+    main .container .pencil .circle1_img_png img {
+        position: absolute;
+        height: 80px;
+        width: 57px;
+        left: 41px;
+        top: 26px;
+    }
+    main .container .pencil .text_links1 {
+        position: absolute;
+        width: 55%;
+        font-size: 20px;
+        text-align: left;
+        left: 38%;
+        top: 30%;
+    }
+    main .container .pencil .text_links1 a {
+        text-decoration: none;
+        color: #5094f2;
+        font-size: 34px;
+    }
+    main .container .pencil .text_links1 p {
+        font-size: 19px;
+        padding-top: 10px;
+        color: #909090;
+    }
+    main .container .pc {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: 33%;
+        display: inline-block;
+        border-bottom: 1px solid #ccc;
+    }
+    main .container .pc .circle2_img_png {
+        box-sizing: border-box;
+        position: absolute;
+        width: 135px;
+        height: 135px;
+        background-image: url('../Image/Shape\ 1\ copy\ 2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 8%;
+        top: 20%;
+    }
+    main .container .pc .circle2_img_png img {
+        position: absolute;
+        height: 60px;
+        width: 71px;
+        left: 32px;
+        top: 37px;
+    }
+    main .container .pc .text_links2 {
+        position: absolute;
+        width: 55%;
+        font-size: 20px;
+        text-align: left;
+        left: 38%;
+        top: 30%;
+    }
+    main .container .pc .text_links2 a {
+        text-decoration: none;
+        color: #5094f2;
+        font-size: 34px;
+    }
+    main .container .pc .text_links2 p {
+        font-size: 19px;
+        padding-top: 10px;
+        color: #909090;
+    }
+    main .container .bag {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: 34%;
+        display: inline-block;
+        border-bottom: 1px solid #ccc;
+    }
+    main .container .bag .circle3_img_png {
+        box-sizing: border-box;
+        position: absolute;
+        width: 135px;
+        height: 135px;
+        background-image: url('../Image/Shape\ 1\ copy\ 3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 8%;
+        top: 20%;
+    }
+    main .container .bag .circle3_img_png img {
+        position: absolute;
+        height: 70px;
+        width: 80px;
+        left: 30px;
+        top: 30px;
+    }
+    main .container .bag .text_links3 {
+        position: absolute;
+        width: 55%;
+        font-size: 20px;
+        text-align: left;
+        left: 38%;
+        top: 30%;
+    }
+    main .container .bag .text_links3 a {
+        text-decoration: none;
+        color: #5094f2;
+        font-size: 34px;
+    }
+    main .container .bag .text_links3 p {
+        font-size: 19px;
+        padding-top: 10px;
+        color: #909090;
+    }
+}
+
+main .container .shopping_cart {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    top: 50px;
+}
+
+main .container .shopping_cart .shopping {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+main .container .shopping_cart .shopping h2 {
+    position: absolute;
+    font-size: 45px;
+    font-weight: normal;
+    color: #6f7173;
+    left: 11%;
+    top: 2%;
+}
+
+main .container .shopping_cart .shopping img {
+    position: absolute;
+    width: 375px;
+    height: 285px;
+    top: 28%;
+    left: 12%;
+}
+
+main .container .shopping_cart .text_bullet {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+main .container .text_bullet h3 {
+    font-size: 30px;
+    position: absolute;
+    font-weight: normal;
+    color: #6f7173;
+    top: 20%;
+}
+
+main .container .text_bullet p {
+    position: absolute;
+    width: 100%;
+    line-height: 35px;
+    font-size: 16px;
+    color: #6f7173;
+    top: 35%;
+}
+
+@media screen and (max-width:640px) {
+    main .container {
+        height: 654px;
+    }
+    main .container .shopping_cart {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    main .container .shopping_cart .shopping {
+        position: relative;
+        width: 100%;
+        height: 45%;
+        box-sizing: border-box;
+    }
+    main .container .shopping_cart .shopping h2 {
+        position: absolute;
+        font-size: 42px;
+        font-weight: normal;
+        color: #6f7173;
+        left: 24%;
+        top: 60px;
+    }
+    main .container .shopping_cart .shopping img {
+        width: 215px;
+        height: 160px;
+        position: absolute;
+        top: 135px;
+        left: 36%;
+    }
+    main .container .shopping_cart .text_bullet {
+        position: relative;
+        width: 100%;
+        height: 55%;
+    }
+    main .container .text_bullet h3 {
+        font-size: 34px;
+        position: absolute;
+        font-weight: normal;
+        color: #6f7173;
+        top: 10%;
+        left: 8%;
+    }
+    main .container .text_bullet p {
+        position: absolute;
+        width: 90%;
+        line-height: 40px;
+        font-size: 17px;
+        color: #6f7173;
+        top: 27%;
+        left: 8%;
+    }
+}
+
+footer {
+    position: relative;
+    top: 65px;
+    height: 85px;
+    border-top: 1px solid #e5e5e5;
+}
+
+footer .container {
+    max-width: 1280px;
+    height: 85px;
+}
+
+footer .container p {
+    line-height: 85px;
+    font-size: 16px;
+    color: #6f7173;
+    font-weight: normal;
+    text-align: center;
+}
+
+@media screen and (max-width:640px) {
+    footer {
+        position: relative;
+        top: 130px;
+        border-top: 1px solid #e5e5e5;
+    }
+    footer .container p {
+        line-height: 85px;
+        font-size: 16px;
+        color: #6f7173;
+        font-weight: normal;
+        text-align: center;
+    }
 }
