@@ -311,7 +311,7 @@ section .container .text_name_button img:hover {
     .text_name_button h2 {
         position: absolute;
         top: 14%;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: normal;
         color: #fff;
     }
@@ -319,7 +319,7 @@ section .container .text_name_button img:hover {
         position: absolute;
         top: 30%;
         line-height: 40px;
-        font-size: 19px;
+        font-size: 16px;
         font-weight: normal;
         color: #fff;
     }
@@ -327,13 +327,13 @@ section .container .text_name_button img:hover {
         position: absolute;
         top: 70%;
         margin-left: 0;
-        width: 235px;
+        width: 75%;
         line-height: 40px;
         padding-left: 25px;
         border: 1px solid #5094f2;
         background-color: #5094f2;
         color: #fff;
-        font-size: 27px;
+        font-size: 23px;
         background-repeat: no-repeat;
         background-position: 10px 8px;
     }
@@ -558,10 +558,10 @@ main .container .bag .text_links3 p {
     main .container .pencil .text_links1 a {
         text-decoration: none;
         color: #5094f2;
-        font-size: 34px;
+        font-size: 25px;
     }
     main .container .pencil .text_links1 p {
-        font-size: 19px;
+        font-size: 15px;
         padding-top: 10px;
         color: #909090;
     }
@@ -602,10 +602,10 @@ main .container .bag .text_links3 p {
     main .container .pc .text_links2 a {
         text-decoration: none;
         color: #5094f2;
-        font-size: 34px;
+        font-size: 25px;
     }
     main .container .pc .text_links2 p {
-        font-size: 19px;
+        font-size: 15px;
         padding-top: 10px;
         color: #909090;
     }
@@ -646,10 +646,10 @@ main .container .bag .text_links3 p {
     main .container .bag .text_links3 a {
         text-decoration: none;
         color: #5094f2;
-        font-size: 34px;
+        font-size: 25px;
     }
     main .container .bag .text_links3 p {
-        font-size: 19px;
+        font-size: 15px;
         padding-top: 10px;
         color: #909090;
     }
@@ -690,7 +690,6 @@ main .container .shopping_cart .shopping img {
 main .container .shopping_cart .text_bullet {
     position: relative;
     width: 50%;
-    height: 100%;
 }
 
 main .container .text_bullet h3 {
@@ -712,13 +711,13 @@ main .container .text_bullet p {
 
 @media screen and (max-width:640px) {
     main .container {
-        height: 654px;
+        height: 550px;
     }
     main .container .shopping_cart {
         position: relative;
         box-sizing: border-box;
         width: 100%;
-        height: 100%;
+        height: 550px;
         display: block;
     }
     main .container .shopping_cart .shopping {
@@ -729,10 +728,10 @@ main .container .text_bullet p {
     }
     main .container .shopping_cart .shopping h2 {
         position: absolute;
-        font-size: 42px;
+        font-size: 35px;
         font-weight: normal;
         color: #6f7173;
-        left: 24%;
+        left: 23%;
         top: 60px;
     }
     main .container .shopping_cart .shopping img {
@@ -740,28 +739,29 @@ main .container .text_bullet p {
         height: 160px;
         position: absolute;
         top: 135px;
-        left: 36%;
+        left: 30%;
     }
     main .container .shopping_cart .text_bullet {
+        box-sizing: border-box;
         position: relative;
         width: 100%;
-        height: 55%;
+        height: 50%;
+        top: 10%;
     }
     main .container .text_bullet h3 {
-        font-size: 34px;
+        font-size: 25px;
         position: absolute;
         font-weight: normal;
         color: #6f7173;
-        top: 10%;
+        top: 12%;
         left: 8%;
     }
     main .container .text_bullet p {
         position: absolute;
-        width: 90%;
-        line-height: 40px;
-        font-size: 17px;
+        width: 91%;
+        font-size: 14px;
         color: #6f7173;
-        top: 27%;
+        top: 26%;
         left: 8%;
     }
 }
