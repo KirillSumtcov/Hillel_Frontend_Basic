@@ -1,387 +1,402 @@
 * {
-    margin: 0;
     padding: 0;
-    font-family: Helvetica, sans-serif, Arial;
+    margin: 0;
+    font-family: sans-serif, Arial, Helvetica;
 }
 
 .container {
+    width: 1280px;
     margin: 0 auto;
-    box-sizing: border-box;
 }
 
 header .container {
-    max-width: 1280px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: block;
     font-size: 0;
-    position: relative;
-    height: 120px;
 }
 
 header .container .logo {
-    max-width: 50%;
-    height: 90px;
-    position: absolute;
-    top: 30px;
-    left: 3%;
-}
-
-header .container .logo a {
-    max-width: 50%;
-    text-decoration: none;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    padding: 0 0 0 115px;
 }
 
 header .container .logo .bg_logo {
-    position: absolute;
-    width: 50px;
-    height: 50px;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background-color: #5094f2;
-    line-height: 100px;
     text-align: center;
+    line-height: 100%;
+    font-size: 70px;
     color: #fff;
-    font-size: 100px;
-    display: inline-block;
-    left: 125px;
-    top: 10px;
 }
 
-header .container .logo a p {
-    position: absolute;
-    left: 195px;
-    font-size: 70px;
-    color: #000;
+header .container .logo .name_logo {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 0 20px;
+}
+
+header .container .logo .name_logo h1 {
+    font-size: 42px;
+    font-weight: normal;
 }
 
 header .container .link {
-    max-width: 50%;
-    position: absolute;
-    top: 50px;
-    right: 6%;
-    font-size: 21px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 50%;
     text-align: right;
-    line-height: 70px;
+    padding: 0 115px 0 0;
 }
 
 header .container .link a {
+    font-size: 20px;
+    padding: 0 15px 0 15px;
     text-decoration: none;
     color: #6c6c6c;
-    margin-right: 40px;
 }
 
 header .container .link a:hover {
-    box-shadow: 0 40px 0 #5094f2;
-    transition: 0.4s linear;
+    transition: 0.2s linear;
+    box-shadow: 0 20px 0 -10px #5094f2;
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:1280px) {
     header .container {
-        max-width: 1280px;
-        font-size: 0;
-        position: relative;
-        max-height: 90px;
+        box-sizing: border-box;
+        max-width: 100%;
     }
-    header .container .logo a {
+    header .container .logo {
         max-width: 50%;
-        text-decoration: none;
     }
     header .container .logo .bg_logo {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #5094f2;
-        line-height: 80px;
-        text-align: center;
-        color: #fff;
-        font-size: 70px;
-        display: inline-block;
-        left: 31px;
-        top: 0;
+        max-width: 45px;
+        max-height: 45px;
     }
-    header .container .logo a p {
-        position: absolute;
-        left: 90px;
+    header .container .link {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header .container {
+        max-width: 100%;
+        padding: 10px 10px 10px 30px;
+    }
+    header .container .logo {
+        max-width: 50%;
+        padding: 0;
+    }
+    header .container .logo .bg_logo {
+        max-width: 40px;
+        max-height: 40px;
         font-size: 50px;
-        color: #000;
+    }
+    header .container .logo .name_logo {
+        padding: 0 0 0 10px;
+    }
+    header .container .logo .name_logo h1 {
+        font-size: 28px;
     }
     header .container .link {
         position: relative;
-        left: 80%;
-        top: 35%;
+        top: 0;
+        left: 27%;
+        max-width: 30%;
+        padding: 0;
         width: 60px;
-        height: 44px;
-        border: 1px solid #5094f2;
+        height: 45px;
         background-color: #5094f2;
-        border-radius: 10%;
-    }
-    header .container .link:hover {
-        cursor: pointer;
+        border-radius: 10px;
+        border: 1px solid #5094f2;
     }
     header .container .link::before,
     .link::after {
         content: '';
-        display: block;
         width: 40px;
         height: 6px;
-        background-color: #fff;
-        margin: 6px 10px;
-        border-radius: 2px;
+        margin: 6px 9px;
+        display: block;
+        box-shadow: 0 12px 0#fff;
     }
     header .container .link::before {
-        margin-bottom: 19px;
-        box-shadow: 0 12px 0 #fff;
+        background-color: #fff;
     }
     header .container .link a {
         display: none;
+        font-size: 20px;
+        padding: 0 15px 0 15px;
         text-decoration: none;
         color: #6c6c6c;
-        margin-right: 40px;
     }
     header .container .link a:hover {
-        display: none;
-        box-shadow: 0 33px 1px #5094f2;
-        transition: 0.4s linear;
+        transition: 0.2s linear;
+        box-shadow: 0 20px 0 -10px #5094f2;
     }
 }
 
-section {
-    position: relative;
-    background-image: url('../Image/dsfsdfsdfds.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+
+/*SECTION*/
+
+
+/*№1*/
+
+section .container {
     box-sizing: border-box;
+    width: 100%;
 }
 
-@keyframes container {
-    0% {
-        transform: scale(0);
+section .container .bg_photo_text {
+    width: 100%;
+    padding: 1%;
+    box-sizing: border-box;
+    display: block;
+    background-image: url("../Image/dsfsdfsdfds.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+section .container .bg_photo_text .iphone {
+    box-sizing: border-box;
+    width: 25%;
+    margin: 3% 5% 0 7%;
+    display: inline-block;
+    background-image: url("../Image/iphone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section .container .bg_photo_text .iphone img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+section .container .text_name_button {
+    display: inline-block;
+    vertical-align: top;
+    margin: 8% 0 0 7%;
+}
+
+section .container .text_name_button h2 {
+    font-size: 3vw;
+    font-weight: normal;
+    color: #fff;
+    padding-bottom: 2%;
+}
+
+section .container .text_name_button p {
+    font-size: 2vw;
+    color: #fff;
+    line-height: 40px;
+}
+
+section .container .text_name_button .bg_button_shape {
+    box-sizing: border-box;
+    display: block;
+    width: 340px;
+    text-align: center;
+    background-color: #5094f2;
+    padding: 7px;
+    margin: 5% 0 0 5%;
+}
+
+section .container .text_name_button .bg_button_shape:hover {
+    box-shadow: 0 0 10px #fff;
+    transition: 0.2 linear;
+}
+
+section .container .text_name_button .bg_button {
+    background-color: #5094f2;
+    width: 25px;
+    height: 25px;
+    background-image: url("../Image/Shape\ 2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+section .container .text_name_button .bg_button img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+section .container .text_name_button .button_block {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+}
+
+section .container .text_name_button .button_block form .button {
+    background-color: #5094f2;
+    font-size: 2vw;
+    border: 1px solid #5094f2;
+    color: #fff;
+}
+
+section .container .bg_photo_text .layer_left {
+    position: relative;
+    left: 5%;
+    bottom: 180px;
+}
+
+section .container .bg_photo_text .layer_left:hover {
+    transition: 0.2s linear;
+    transform: scale(0.8);
+}
+
+section .container .bg_photo_text .layer_right {
+    position: relative;
+    left: 90%;
+    bottom: 180px;
+}
+
+section .container .bg_photo_text .layer_right:hover {
+    transition: 0.2s linear;
+    transform: scale(0.8);
+}
+
+@media screen and (max-width:1280px) {
+    section .container .bg_photo_text {
+        max-width: 100%;
     }
-    100% {
-        transform: scale(1);
+    section .container .bg_photo_text .iphone img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    section .container .text_name_button .bg_button_shape {
+        max-width: 25vw;
+    }
+    section .container .text_name_button .bg_button {
+        max-width: 25px;
+        max-height: 25px;
+    }
+    section .container .text_name_button .bg_button img {
+        max-width: 100%;
+        max-height: 100%;
     }
 }
+
+@media screen and (max-width:768px) {
+    section .container {
+        max-width: 100%;
+    }
+    section .container .bg_photo_text {
+        max-width: 100%;
+    }
+    section .container .bg_photo_text .iphone {
+        box-sizing: border-box;
+        max-width: 25%;
+        margin: 2% 0 0 5%;
+    }
+    section .container .bg_photo_text .iphone img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    section .container .text_name_button {
+        display: inline-block;
+        vertical-align: top;
+        margin: 3% 0 0 10%;
+    }
+    section .container .text_name_button h2 {
+        font-size: 4vw;
+    }
+    section .container .text_name_button p {
+        font-size: 3vw;
+        line-height: 40px;
+    }
+    section .container .text_name_button .bg_button_shape {
+        max-width: 40vw;
+    }
+    section .container .text_name_button .bg_button {
+        max-width: 4vw;
+        max-height: 4vw;
+    }
+    section .container .text_name_button .button_block form .button {
+        font-size: 3vw;
+    }
+    section .container .bg_photo_text .layer_left {
+        display: none;
+    }
+    section .container .bg_photo_text .layer_right {
+        display: none;
+    }
+}
+
+@media screen and (max-width:470px) {
+    section .container {
+        max-width: 100%;
+    }
+    section .container .bg_photo_text {
+        max-width: 100%;
+    }
+    section .container .bg_photo_text .iphone {
+        box-sizing: border-box;
+        min-width: 130px;
+        margin: 2% 0 0 2%;
+    }
+    section .container .bg_photo_text .iphone img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    section .container .text_name_button {
+        display: inline-block;
+        vertical-align: top;
+        margin: 5% 0 0 3%;
+    }
+    section .container .text_name_button h2 {
+        font-size: 5vw;
+    }
+    section .container .text_name_button p {
+        font-size: 4vw;
+        line-height: 30px;
+    }
+    section .container .text_name_button .bg_button_shape {
+        max-width: 40vw;
+    }
+    section .container .text_name_button .bg_button {
+        max-width: 4vw;
+        max-height: 4vw;
+    }
+    section .container .text_name_button .button_block form .button {
+        font-size: 4vw;
+    }
+    section .container .bg_photo_text .layer_left {
+        display: none;
+    }
+    section .container .bg_photo_text .layer_right {
+        display: none;
+    }
+}
+
+
+/*SECTION*/
+
+
+/*№2*/
 
 section .container {
     max-width: 1280px;
     position: relative;
     display: flex;
-    animation-name: container;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
 }
 
-section .container .layer {
-    position: absolute;
-    top: 49%;
-    left: 3%;
-}
-
-section .container .layer:hover {
-    transform: scale(0.8);
-    transition: 0.2s linear;
-    cursor: pointer;
-}
-
-section .container .iphone {
-    box-sizing: border-box;
-    width: 50%;
-    height: 480px;
-}
-
-section .container .iphone img {
-    position: absolute;
-    left: 14%;
-    top: 40px;
-}
-
-section .container .text_name_button {
-    box-sizing: border-box;
-    position: relative;
-    width: 50%;
-}
-
-.text_name_button h2 {
-    position: absolute;
-    top: 30%;
-    font-size: 42px;
-    font-weight: normal;
-    color: #fff;
-}
-
-.text_name_button p {
-    position: absolute;
-    top: 45%;
-    line-height: 50px;
-    font-size: 27px;
-    font-weight: normal;
-    color: #fff;
-}
-
-section .container .text_name_button .button {
-    position: absolute;
-    top: 70%;
-    margin-left: 15px;
-    width: 180px;
-    line-height: 40px;
-    padding-left: 25px;
-    border: 1px solid #5094f2;
-    background-color: #5094f2;
-    color: #fff;
-    font-size: 22px;
-    background-repeat: no-repeat;
-    background-position: 10px 8px;
-}
-
-section .container .text_name_button .button:hover {
-    box-shadow: 0px 0px 10px #fff;
-    transition: 0.4s linear;
-    cursor: pointer;
-}
-
-section .container .text_name_button img {
-    position: absolute;
-    left: 90%;
-    bottom: 38%;
-}
-
-section .container .text_name_button img:hover {
-    transform: scale(0.8);
-    transition: 0.2s linear;
-    cursor: pointer;
-}
-
-@media screen and (max-width:640px) {
-    section {
-        position: relative;
-        max-height: 250px;
-        background-image: url('../Image/dsfsdfsdfds.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        box-sizing: border-box;
-    }
-    @keyframes container {
-        0% {
-            transform: scale(0);
-        }
-        100% {
-            transform: scale(1);
-        }
-    }
-    section .container {
-        max-width: 1280px;
-        position: relative;
-        max-height: 250px;
-        display: flex;
-        animation-name: container;
-        animation-timing-function: ease;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1;
-        animation-duration: 2s;
-    }
-    section .container .layer {
-        display: none;
-        position: absolute;
-        top: 49%;
-        left: 3%;
-    }
-    section .container .layer:hover {
-        transform: scale(0.8);
-        transition: 0.2s linear;
-        cursor: pointer;
-    }
-    section .container .iphone {
-        box-sizing: border-box;
-        width: 43%;
-        max-height: 250px;
-        padding: 10px;
-        margin-right: 15px;
-    }
-    section .container .iphone img {
-        position: absolute;
-        left: 5%;
-        height: 225px;
-        width: 180px;
-        top: 20px;
-    }
-    section .container .text_name_button {
-        box-sizing: border-box;
-        position: relative;
-        width: 53%;
-    }
-    .text_name_button h2 {
-        position: absolute;
-        top: 14%;
-        padding-left: 10px;
-        margin-left: 5px;
-        font-size: 20px;
-        font-weight: normal;
-        color: #fff;
-    }
-    .text_name_button p {
-        position: absolute;
-        top: 30%;
-        padding-left: 10px;
-        margin-left: 5px;
-        line-height: 40px;
-        font-size: 16px;
-        font-weight: normal;
-        color: #fff;
-    }
-    section .container .text_name_button .button {
-        position: absolute;
-        top: 70%;
-        width: 85%;
-        line-height: 40px;
-        padding-left: 25px;
-        border: 1px solid #5094f2;
-        background-color: #5094f2;
-        color: #fff;
-        font-size: 23px;
-        background-repeat: no-repeat;
-        background-position: 10px 8px;
-    }
-    section .container .text_name_button .button:hover {
-        box-shadow: 0px 0px 10px #fff;
-        transition: 0.4s linear;
-        cursor: pointer;
-    }
-    section .container .text_name_button img {
-        display: none;
-        position: absolute;
-        left: 90%;
-        bottom: 38%;
-    }
-    section .container .text_name_button img:hover {
-        transform: scale(0.8);
-        transition: 0.2s linear;
-        cursor: pointer;
-    }
-}
-
-main {
-    position: relative;
-    top: -10px;
-    background-image: url("../Image/Layer\ 61.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-main .container {
-    max-width: 1280px;
-    position: relative;
-    top: 10px;
-    display: flex;
-}
-
-main .container .pencil {
+section .container .pencil {
     position: relative;
     box-sizing: border-box;
     width: 33%;
     height: 360px;
 }
 
-main .container .pencil .circle1_img_png {
+section .container .pencil .circle1_img_png {
     position: absolute;
     width: 190px;
     height: 190px;
@@ -392,13 +407,13 @@ main .container .pencil .circle1_img_png {
     top: 65px;
 }
 
-main .container .pencil .circle1_img_png img {
+section .container .pencil .circle1_img_png img {
     position: absolute;
     left: 55px;
     top: 45px;
 }
 
-main .container .pencil .text_links1 {
+section .container .pencil .text_links1 {
     position: absolute;
     width: 69%;
     font-size: 20px;
@@ -407,26 +422,26 @@ main .container .pencil .text_links1 {
     top: 80%;
 }
 
-main .container .pencil .text_links1 a {
+section .container .pencil .text_links1 a {
     text-decoration: none;
     color: #5094f2;
     font-size: 20px;
 }
 
-main .container .pencil .text_links1 p {
+section .container .pencil .text_links1 p {
     font-size: 16px;
     padding-top: 10px;
     color: #909090;
 }
 
-main .container .pc {
+section .container .pc {
     position: relative;
     box-sizing: border-box;
     width: 33%;
     height: 360px;
 }
 
-main .container .pc .circle2_img_png {
+section .container .pc .circle2_img_png {
     position: absolute;
     width: 190px;
     height: 190px;
@@ -437,13 +452,13 @@ main .container .pc .circle2_img_png {
     top: 65px;
 }
 
-main .container .pc .circle2_img_png img {
+section .container .pc .circle2_img_png img {
     position: absolute;
     left: 48px;
     top: 55px;
 }
 
-main .container .pc .text_links2 {
+section .container .pc .text_links2 {
     position: absolute;
     max-width: 69%;
     font-size: 20px;
@@ -452,26 +467,26 @@ main .container .pc .text_links2 {
     top: 80%;
 }
 
-main .container .pc .text_links2 a {
+section .container .pc .text_links2 a {
     text-decoration: none;
     color: #5094f2;
     font-size: 20px;
 }
 
-main .container .pc .text_links2 p {
+section .container .pc .text_links2 p {
     font-size: 16px;
     padding-top: 10px;
     color: #909090;
 }
 
-main .container .bag {
+section .container .bag {
     box-sizing: border-box;
     position: relative;
     width: 33%;
     height: 360px;
 }
 
-main .container .bag .circle3_img_png {
+section .container .bag .circle3_img_png {
     position: absolute;
     width: 190px;
     height: 190px;
@@ -482,13 +497,13 @@ main .container .bag .circle3_img_png {
     top: 65px;
 }
 
-main .container .bag .circle3_img_png img {
+section .container .bag .circle3_img_png img {
     position: absolute;
     left: 48px;
     top: 50px;
 }
 
-main .container .bag .text_links3 {
+section .container .bag .text_links3 {
     position: absolute;
     max-width: 69%;
     font-size: 20px;
@@ -497,288 +512,482 @@ main .container .bag .text_links3 {
     top: 80%;
 }
 
-main .container .bag .text_links3 a {
+section .container .bag .text_links3 a {
     text-decoration: none;
     color: #5094f2;
     font-size: 20px;
 }
 
-main .container .bag .text_links3 p {
+section .container .bag .text_links3 p {
     font-size: 16px;
     padding-top: 10px;
     color: #909090;
 }
 
-@media screen and (max-width:640px) {
-    main {
+@media screen and (max-width:1280px) {
+    section .container {
+        width: 100%;
         position: relative;
-        top: -10px;
-        background-image: url("../Image/Layer\ 61.png");
-        background-repeat: no-repeat;
-        background-size: 0;
-        max-height: 575px;
+        display: flex;
     }
-    main .container {
+    section .container .pencil {
+        position: relative;
+        box-sizing: border-box;
+        width: 33%;
+        height: 360px;
+    }
+    section .container .pencil .circle1_img_png {
+        position: absolute;
+        width: 190px;
+        height: 190px;
+        background-image: url('../Image/Shape\ 1\ copy.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 45%;
+        top: 65px;
+    }
+    section .container .pencil .circle1_img_png img {
+        position: absolute;
+        left: 55px;
+        top: 45px;
+    }
+    section .container .pencil .text_links1 {
+        position: absolute;
+        width: 69%;
+        font-size: 20px;
+        text-align: center;
+        left: 35%;
+        top: 80%;
+    }
+    section .container .pencil .text_links1 a {
+        text-decoration: none;
+        color: #5094f2;
+        font-size: 20px;
+    }
+    section .container .pencil .text_links1 p {
+        font-size: 16px;
+        padding-top: 10px;
+        color: #909090;
+    }
+    section .container .pc {
+        position: relative;
+        box-sizing: border-box;
+        width: 33%;
+        height: 360px;
+    }
+    section .container .pc .circle2_img_png {
+        position: absolute;
+        width: 190px;
+        height: 190px;
+        background-image: url('../Image/Shape\ 1\ copy\ 2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 31%;
+        top: 65px;
+    }
+    section .container .pc .circle2_img_png img {
+        position: absolute;
+        left: 48px;
+        top: 55px;
+    }
+    section .container .pc .text_links2 {
+        position: absolute;
+        max-width: 69%;
+        font-size: 20px;
+        text-align: center;
+        left: 22%;
+        top: 80%;
+    }
+    section .container .pc .text_links2 a {
+        text-decoration: none;
+        color: #5094f2;
+        font-size: 20px;
+    }
+    section .container .pc .text_links2 p {
+        font-size: 16px;
+        padding-top: 10px;
+        color: #909090;
+    }
+    section .container .bag {
+        box-sizing: border-box;
+        position: relative;
+        width: 33%;
+        height: 360px;
+    }
+    section .container .bag .circle3_img_png {
+        position: absolute;
+        width: 190px;
+        height: 190px;
+        background-image: url('../Image/Shape\ 1\ copy\ 3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 12%;
+        top: 65px;
+    }
+    section .container .bag .circle3_img_png img {
+        position: absolute;
+        left: 48px;
+        top: 50px;
+    }
+    section .container .bag .text_links3 {
+        position: absolute;
+        max-width: 69%;
+        font-size: 20px;
+        text-align: center;
+        left: 4%;
+        top: 80%;
+    }
+    section .container .bag .text_links3 a {
+        text-decoration: none;
+        color: #5094f2;
+        font-size: 20px;
+    }
+    section .container .bag .text_links3 p {
+        font-size: 16px;
+        padding-top: 10px;
+        color: #909090;
+    }
+}
+
+@media screen and (max-width:768px) {
+    section .container {
         width: 100%;
         box-sizing: border-box;
         position: relative;
         display: block;
     }
-    main .container .pencil {
-        position: relative;
-        box-sizing: border-box;
+    section .container .pencil {
         width: 100%;
         max-height: 200px;
-        display: inline-block;
         border-bottom: 1px solid #ccc;
     }
-    main .container .pencil .circle1_img_png {
-        box-sizing: border-box;
-        position: absolute;
+    section .container .pencil .circle1_img_png {
         width: 135px;
         height: 135px;
-        background-image: url('../Image/Shape\ 1\ copy.png');
-        background-repeat: no-repeat;
-        background-size: cover;
         left: 4%;
         top: 20%;
     }
-    main .container .pencil .circle1_img_png img {
-        position: absolute;
+    section .container .pencil .circle1_img_png img {
         height: 80px;
         width: 57px;
         left: 41px;
         top: 26px;
     }
-    main .container .pencil .text_links1 {
-        position: absolute;
-        width: 55%;
+    section .container .pencil .text_links1 {
+        width: 50vw;
         font-size: 0;
         text-align: left;
-        left: 38%;
-        top: 30%;
+        left: 40%;
+        top: 35%;
+        margin-left: 10px;
     }
-    main .container .pencil .text_links1 a {
-        text-decoration: none;
-        color: #5094f2;
-        font-size: 25px;
+    section .container .pencil .text_links1 a {
+        font-size: 5vw;
     }
-    main .container .pencil .text_links1 p {
-        font-size: 15px;
-        padding-top: 10px;
-        color: #909090;
+    section .container .pencil .text_links1 p {
+        font-size: 3vw;
     }
-    main .container .pc {
-        position: relative;
-        box-sizing: border-box;
+    section .container .pc {
         width: 100%;
         max-height: 200px;
-        display: inline-block;
         border-bottom: 1px solid #ccc;
     }
-    main .container .pc .circle2_img_png {
-        box-sizing: border-box;
-        position: absolute;
+    section .container .pc .circle2_img_png {
         width: 135px;
         height: 135px;
-        background-image: url('../Image/Shape\ 1\ copy\ 2.png');
-        background-repeat: no-repeat;
-        background-size: cover;
         left: 4%;
         top: 20%;
     }
-    main .container .pc .circle2_img_png img {
-        position: absolute;
+    section .container .pc .circle2_img_png img {
         height: 70px;
         width: 71px;
         left: 32px;
         top: 37px;
     }
-    main .container .pc .text_links2 {
-        position: absolute;
-        width: 55%;
+    section .container .pc .text_links2 {
+        width: 50vw;
         font-size: 20px;
         text-align: left;
-        left: 38%;
-        top: 30%;
+        left: 40%;
+        top: 35%;
+        margin-left: 10px;
     }
-    main .container .pc .text_links2 a {
-        text-decoration: none;
-        color: #5094f2;
-        font-size: 25px;
+    section .container .pc .text_links2 a {
+        font-size: 5vw;
     }
-    main .container .pc .text_links2 p {
-        font-size: 15px;
-        padding-top: 10px;
-        color: #909090;
+    section .container .pc .text_links2 p {
+        font-size: 3vw;
     }
-    main .container .bag {
-        position: relative;
-        box-sizing: border-box;
+    section .container .bag {
         width: 100%;
         max-height: 200px;
-        display: inline-block;
         border-bottom: 1px solid #ccc;
     }
-    main .container .bag .circle3_img_png {
-        box-sizing: border-box;
-        position: absolute;
+    section .container .bag .circle3_img_png {
         width: 135px;
         height: 135px;
-        background-image: url('../Image/Shape\ 1\ copy\ 3.png');
-        background-repeat: no-repeat;
-        background-size: cover;
         left: 4%;
         top: 20%;
     }
-    main .container .bag .circle3_img_png img {
-        position: absolute;
+    section .container .bag .circle3_img_png img {
         height: 70px;
         width: 80px;
         left: 30px;
         top: 30px;
     }
-    main .container .bag .text_links3 {
+    section .container .bag .text_links3 {
         position: absolute;
-        width: 55%;
+        width: 50vw;
         font-size: 20px;
         text-align: left;
-        left: 38%;
-        top: 30%;
+        left: 40%;
+        top: 35%;
+        margin-left: 10px;
     }
-    main .container .bag .text_links3 a {
-        text-decoration: none;
-        color: #5094f2;
-        font-size: 25px;
+    section .container .bag .text_links3 a {
+        font-size: 5vw;
     }
-    main .container .bag .text_links3 p {
-        font-size: 15px;
-        padding-top: 10px;
-        color: #909090;
+    section .container .bag .text_links3 p {
+        font-size: 3vw;
     }
 }
 
-main .container .shopping_cart {
+
+/* SECTION */
+
+
+/*№3*/
+
+section .container {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+section .container .shopping_cart {
     position: relative;
     box-sizing: border-box;
     width: 100%;
-    height: 450px;
     display: flex;
-    top: 50px;
+    top: 70px;
 }
 
-main .container .shopping_cart .shopping {
-    width: 50%;
-    height: 100%;
+section .container .shopping_cart .shopping {
+    width: 50vw;
     box-sizing: border-box;
 }
 
-main .container .shopping_cart .shopping h2 {
+section .container .shopping_cart .shopping h2 {
     position: absolute;
-    font-size: 45px;
+    font-size: 3vw;
     font-weight: normal;
     color: #6f7173;
     left: 11%;
     top: 2%;
 }
 
-main .container .shopping_cart .shopping img {
-    position: absolute;
+section .container .shopping_cart .shopping img {
+    position: relative;
     width: 375px;
     height: 285px;
-    top: 28%;
-    left: 12%;
+    top: 130px;
+    left: 150px;
 }
 
-main .container .shopping_cart .text_bullet {
+section .container .shopping_cart .text_bullet {
     position: relative;
-    width: 50%;
+    width: 50vw;
 }
 
-main .container .text_bullet h3 {
-    font-size: 30px;
+section .container .text_bullet h3 {
+    font-size: 2vw;
     position: absolute;
     font-weight: normal;
     color: #6f7173;
-    top: 20%;
+    top: 30%;
 }
 
-main .container .text_bullet p {
+section .container .text_bullet p {
     position: absolute;
     width: 100%;
     line-height: 35px;
     font-size: 16px;
     color: #6f7173;
-    top: 35%;
+    top: 55%;
 }
 
-@media screen and (max-width:640px) {
-    main .container {
-        max-height: 550px;
+@media screen and (max-width:1280px) {
+    section .container {
+        box-sizing: border-box;
+        width: 100%;
     }
-    main .container .shopping_cart {
+    section .container .shopping_cart {
         position: relative;
         box-sizing: border-box;
         width: 100%;
-        max-height: 550px;
-        display: block;
+        display: flex;
+        top: 70px;
     }
-    main .container .shopping_cart .shopping {
-        position: relative;
-        width: 100%;
-        max-height: 45%;
+    section .container .shopping_cart .shopping {
+        width: 50vw;
         box-sizing: border-box;
     }
-    main .container .shopping_cart .shopping h2 {
+    section .container .shopping_cart .shopping h2 {
         position: absolute;
-        font-size: 35px;
+        font-size: 3vw;
         font-weight: normal;
         color: #6f7173;
-        left: 23%;
-        top: 60px;
+        left: 13vw;
+        top: 4vh;
     }
-    main .container .shopping_cart .shopping img {
-        width: 215px;
-        height: 160px;
+    section .container .shopping_cart .shopping img {
+        position: relative;
+        width: 375px;
+        height: 285px;
+        top: 35vh;
+        left: 12vw;
+    }
+    section .container .shopping_cart .text_bullet {
+        position: relative;
+        width: 50vw;
+    }
+    section .container .text_bullet h3 {
+        font-size: 2vw;
         position: absolute;
-        top: 135px;
-        left: 30%;
+        font-weight: normal;
+        color: #6f7173;
+        top: 30vh;
     }
-    main .container .shopping_cart .text_bullet {
+    section .container .text_bullet p {
+        position: absolute;
+        width: 100%;
+        line-height: 35px;
+        font-size: 1.5vw;
+        color: #6f7173;
+        top: 45vh;
+    }
+}
+
+@media screen and (max-width:768px) {
+    sectin .container {
+        max-width: 100%;
+    }
+    section .container .shopping_cart {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+        top: 70px;
+    }
+    section .container .shopping_cart .shopping {
+        width: 100vw;
+        box-sizing: border-box;
+    }
+    section .container .shopping_cart .shopping h2 {
+        position: absolute;
+        font-size: 5.5vw;
+        font-weight: normal;
+        color: #6f7173;
+        left: 30%;
+        top: 0;
+    }
+    section .container .shopping_cart .shopping img {
+        position: relative;
+        width: 210px;
+        height: 158px;
+        top: 100px;
+        left: 40%;
+    }
+    section .container .shopping_cart .text_bullet {
         box-sizing: border-box;
         position: relative;
         width: 100%;
-        max-height: 300px;
-        top: 30%;
+        height: 300px;
+        top: 150px;
     }
-    main .container .text_bullet h3 {
-        font-size: 25px;
+    section .container .text_bullet h3 {
+        font-size: 5vw;
         position: absolute;
         font-weight: normal;
         color: #6f7173;
         top: 0;
-        left: 8%;
+        left: 10%;
     }
-    main .container .text_bullet p {
+    section .container .text_bullet p {
         position: absolute;
-        width: 91%;
-        font-size: 14px;
+        width: 90%;
+        line-height: 30px;
+        font-size: 2.5vw;
         color: #6f7173;
-        top: 40px;
-        left: 8%;
+        top: 70px;
+        left: 10%;
     }
 }
 
-footer {
-    position: relative;
-    top: 65px;
-    max-height: 85px;
-    border-top: 1px solid #e5e5e5;
+@media screen and (max-width:500px) {
+    sectin .container {
+        max-width: 100%;
+    }
+    section .container .shopping_cart {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+        top: 40px;
+    }
+    section .container .shopping_cart .shopping {
+        width: 100vw;
+        box-sizing: border-box;
+    }
+    section .container .shopping_cart .shopping h2 {
+        position: absolute;
+        font-size: 7vw;
+        font-weight: normal;
+        color: #6f7173;
+        left: 25%;
+        top: 0;
+    }
+    section .container .shopping_cart .shopping img {
+        position: relative;
+        width: 210px;
+        height: 158px;
+        top: 50px;
+        left: 25%;
+    }
+    section .container .shopping_cart .text_bullet {
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        height: 300px;
+        top: 60px;
+    }
+    section .container .text_bullet h3 {
+        font-size: 6vw;
+        position: absolute;
+        font-weight: normal;
+        color: #6f7173;
+        top: 0;
+        left: 7%;
+    }
+    section .container .text_bullet p {
+        position: absolute;
+        width: 90%;
+        line-height: 25px;
+        font-size: 2.8vw;
+        color: #6f7173;
+        top: 50px;
+        left: 7%;
+    }
 }
+
+
+/*FOOTER*/
 
 footer .container {
-    max-width: 1280px;
-    max-height: 85px;
+    width: 1280px;
+    position: relative;
+    top: 300px;
+    height: 85px;
+    border-top: 1px solid #e5e5e5;
 }
 
 footer .container p {
@@ -789,15 +998,51 @@ footer .container p {
     text-align: center;
 }
 
-@media screen and (max-width:640px) {
-    footer {
+@media screen and (max-width:1280px) {
+    footer .container {
+        width: 100%;
         position: relative;
-        top: 270px;
+        top: 350px;
+        height: 85px;
         border-top: 1px solid #e5e5e5;
     }
     footer .container p {
         line-height: 85px;
         font-size: 16px;
+        color: #6f7173;
+        font-weight: normal;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    footer .container {
+        width: 100%;
+        position: relative;
+        top: 230px;
+        height: 60px;
+        border-top: 1px solid #e5e5e5;
+    }
+    footer .container p {
+        line-height: 60px;
+        font-size: 13px;
+        color: #6f7173;
+        font-weight: normal;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    footer .container {
+        width: 100%;
+        position: relative;
+        top: 70px;
+        height: 50px;
+        border-top: 1px solid #e5e5e5;
+    }
+    footer .container p {
+        line-height: 50px;
+        font-size: 10px;
         color: #6f7173;
         font-weight: normal;
         text-align: center;
