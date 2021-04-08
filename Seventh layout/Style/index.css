@@ -1,0 +1,43 @@
+header {
+    background-image: url("../Image/__\ Banner\ __.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.position {
+    text-align: right;
+}
+
+.section-1 {
+    background-image: url("../Image/Layer\ 5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-2 {
+    background-color: #52ad81;
+}
+
+.section-3 {
+    background-color: #f6f6f7;
+}
+
+.bg-block {
+    background-color: #e9eef3;
+}
+
+.section-4 {
+    background-color: #e9eaed;
+}
+
+.section-6 {
+    background-color: #2d3136;
+}
+
+.section-6 .col-md-6 .height {
+    height: 155px;
+}
+
+.section-7 {
+    background-color: #2a2d33;
+}
